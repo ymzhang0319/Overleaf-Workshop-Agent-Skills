@@ -10,6 +10,19 @@ The `SKILL.md` file tells the agent when and how to use the skill:
 
 > Use when the user wants to read or modify an Overleaf project through the installed VSCode extension `iamhyc.overleaf-workshop`.
 
+## Prerequisites
+
+- [VSCode](https://code.visualstudio.com/) installed
+- Node.js
+
+### VSCode extension setup
+
+1. Install the [Overleaf Workshop](https://marketplace.visualstudio.com/items?itemName=iamhyc.overleaf-workshop) extension in VSCode.
+2. Open the command palette (`Cmd+Shift+P` / `Ctrl+Shift+P`) and run `Overleaf: Login`.
+3. Follow the prompts to authenticate with your Overleaf account.
+
+The extension saves your session in VSCode's internal database — the skill reuses this session automatically, no extra configuration needed.
+
 ## Supported agents
 
 Any agent framework that supports file-based skill discovery:
@@ -63,15 +76,6 @@ The `SKILL.md` instructs the agent to follow this sequence for edits:
 4. `read` again to verify the final remote content.
 
 ## Installation
-
-### Prerequisites
-
-- macOS or Linux
-- VSCode with [iamhyc.overleaf-workshop](https://marketplace.visualstudio.com/items?itemName=iamhyc.overleaf-workshop) installed and logged in
-- `sqlite3` in `PATH`
-- Node.js
-
-### Setup
 
 Clone this repo into your agent's skill directory. For Codex:
 
