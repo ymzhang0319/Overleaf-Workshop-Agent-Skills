@@ -1,3 +1,5 @@
+
+
 # overleaf-vscode-plugin
 
 An agent skill that gives AI coding agents (Codex, Claude Code, OpenClaw, etc.) the ability to read and write Overleaf project files directly from the terminal. It reuses the session already saved by the [iamhyc.overleaf-workshop](https://marketplace.visualstudio.com/items?itemName=iamhyc.overleaf-workshop) VSCode extension — no separate login or API token needed.
@@ -80,7 +82,7 @@ The `SKILL.md` instructs the agent to follow this sequence for edits:
 Clone this repo into your agent's skill directory. For Codex:
 
 ```bash
-git clone https://github.com/<your-username>/overleaf-vscode-plugin.git ~/.codex/skills/overleaf-vscode-plugin
+git clone https://github.com/ymzhang0319/Overleaf-Workshop-Agent-Skills.git ~/.codex/skills/overleaf-vscode-plugin
 ```
 
 The agent will automatically discover the skill via `SKILL.md`.
